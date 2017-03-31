@@ -37,7 +37,7 @@ public class Main2Activity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             Intent intent =new Intent();
-            intent.putExtra(Page2Name,Stringname);
+            intent.putExtra("Name",Stringname);
             setResult(RESULT_OK,intent);
             finish();
         }

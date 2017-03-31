@@ -59,11 +59,11 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         switch(item.getItemId())
         {
-            case R.id.action_set1:
+            case R.id.set1:
                 Toast set =Toast.makeText(MainActivity.this,"Null，It isn't done!!",Toast.LENGTH_LONG);      //作業中未要求設置東西
                 set.show();
                 break;
-            case R.id.action_set2:
+            case R.id.set2:
                 Uri uri=Uri.parse("http://www.google.com.tw");
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_VIEW);
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode,result,intent);
         if(requestCode==1)
         {
-            Page1name=intent.getStringExtra("Page2Name");
+            Page1name=intent.getStringExtra("Name");
             Toast showt = Toast.makeText(MainActivity.this, "Hello   " + Page1name, Toast.LENGTH_LONG);
             showt.show();
         }

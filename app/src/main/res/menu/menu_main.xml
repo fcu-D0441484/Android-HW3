@@ -3,12 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.owen.myapplication.MainActivity">
     <item
-        android:id="@+id/action_set1"
+        android:id="@+id/set1"
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
     <item
-    android:id="@+id/action_set2"
+    android:id="@+id/set2"
     android:orderInCategory="100"
     android:title="@string/action_settings"
     app:showAsAction="never" />
